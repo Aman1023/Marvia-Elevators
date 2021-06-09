@@ -1,0 +1,55 @@
+.elevator-controls {
+    &__container {
+        display: grid;
+        place-items: center;
+        align-self: center;
+        margin: auto;
+        grid-gap: 16px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    &__heading{
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    &__floor {
+        background: #2e2e2e;
+        padding: 8px;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 64px);
+        grid-gap: 16px;
+    }
+
+    &__button {
+        background: #2e2e2e;
+        border: none;
+        border-radius: 8px;
+        height: 64px;
+        font-size: 24px;
+        color: #fff;
+        transition: 250ms ease-in-out filter;
+
+        &:hover{
+            filter: brightness(1.4);
+        }
+    }
+
+    &__sequence {
+        border-radius: 8px;
+        box-sizing: border-box;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        grid-gap: 16px;
+        padding: 16px;
+        background: #2e2e2e;
+    }
+}
